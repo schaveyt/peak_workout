@@ -1,0 +1,178 @@
+[
+  {
+    "week": "1",
+    "goal": "GVT Phase: Muscle endurance",
+    "mon": "GVT Upper (Bench, Rows)",
+    "tue": "LISS (45min)",
+    "wed": "GVT Legs (Leg Press)",
+    "thu": "HIIT (20min)",
+    "fri": "GVT Back (Deadlifts)",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "2",
+    "goal": "GVT Phase: Metabolic stress",
+    "mon": "GVT Chest/Back",
+    "tue": "LISS (45min)",
+    "wed": "GVT Legs (Split Squats)",
+    "thu": "HIIT (20min)",
+    "fri": "GVT Shoulders/Arms",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "3",
+    "goal": "GVT Phase: Final push",
+    "mon": "GVT Upper (Incline Press)",
+    "tue": "LISS (45min)",
+    "wed": "GVT Legs (Hip Thrusts)",
+    "thu": "HIIT (20min)",
+    "fri": "GVT Back (Pull-Ups)",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "4",
+    "goal": "Deload: Recovery",
+    "mon": "Light Full-Body (3x10)",
+    "tue": "Yoga/Stretch",
+    "wed": "Light Cardio (30min)",
+    "thu": "Light Full-Body",
+    "fri": "Walk (30min)",
+    "sat": "Mobility Work",
+    "sun": "Rest"
+  },
+  {
+    "week": "5",
+    "goal": "Strength Phase: Heavy lifts",
+    "mon": "Upper Strength",
+    "tue": "LISS (45min)",
+    "wed": "Lower Strength",
+    "thu": "HIIT (20min)",
+    "fri": "Upper Hypertrophy",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "6",
+    "goal": "Hypertrophy Phase: Muscle growth",
+    "mon": "Chest/Triceps",
+    "tue": "LISS (45min)",
+    "wed": "Legs Hypertrophy",
+    "thu": "HIIT (20min)",
+    "fri": "Back/Biceps",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "7",
+    "goal": "Strength Phase: Progressive load",
+    "mon": "Upper Strength",
+    "tue": "LISS (45min)",
+    "wed": "Lower Strength",
+    "thu": "HIIT (20min)",
+    "fri": "Upper Hypertrophy",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "8",
+    "goal": "Deload: Reset CNS",
+    "mon": "Light Full-Body (3x10)",
+    "tue": "Yoga/Stretch",
+    "wed": "Light Cardio (30min)",
+    "thu": "Light Full-Body",
+    "fri": "Walk (30min)",
+    "sat": "Mobility Work",
+    "sun": "Rest"
+  },
+  {
+    "week": "9",
+    "goal": "GVT Phase: Modified volume",
+    "mon": "GVT Upper (Machine Press)",
+    "tue": "LISS (45min)",
+    "wed": "GVT Legs (Belt Squats)",
+    "thu": "HIIT (20min)",
+    "fri": "GVT Back (Cable Rows)",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "10",
+    "goal": "GVT Phase: Joint-friendly",
+    "mon": "GVT Chest/Back",
+    "tue": "LISS (45min)",
+    "wed": "GVT Legs (Lunges)",
+    "thu": "HIIT (20min)",
+    "fri": "GVT Shoulders/Arms",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "11",
+    "goal": "GVT Phase: Density focus",
+    "mon": "GVT Upper (DB Press)",
+    "tue": "LISS (45min)",
+    "wed": "GVT Legs (Step-Ups)",
+    "thu": "HIIT (20min)",
+    "fri": "GVT Back (Lat Pulldowns)",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "12",
+    "goal": "Deload: Active recovery",
+    "mon": "Light Full-Body (3x10)",
+    "tue": "Yoga/Stretch",
+    "wed": "Light Cardio (30min)",
+    "thu": "Light Full-Body",
+    "fri": "Walk (30min)",
+    "sat": "Mobility Work",
+    "sun": "Rest"
+  },
+  {
+    "week": "13",
+    "goal": "Hypertrophy Phase: Lean muscle",
+    "mon": "Chest/Back Hypertrophy",
+    "tue": "LISS (45min)",
+    "wed": "Legs Hypertrophy",
+    "thu": "HIIT (20min)",
+    "fri": "Shoulders/Arms",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "14",
+    "goal": "Metabolic Conditioning: Fat loss",
+    "mon": "Circuit Training*",
+    "tue": "LISS (45min)",
+    "wed": "Circuit Training",
+    "thu": "HIIT (20min)",
+    "fri": "Circuit Training",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "15",
+    "goal": "Strength Phase: Maintain muscle",
+    "mon": "Upper Strength",
+    "tue": "LISS (45min)",
+    "wed": "Lower Strength",
+    "thu": "HIIT (20min)",
+    "fri": "Upper Hypertrophy",
+    "sat": "Active Recovery",
+    "sun": "Rest"
+  },
+  {
+    "week": "16",
+    "goal": "Deload & Transition",
+    "mon": "Light Full-Body (3x10)",
+    "tue": "Yoga/Stretch",
+    "wed": "Light Cardio (30min)",
+    "thu": "Light Full-Body",
+    "fri": "Walk (30min)",
+    "sat": "Mobility Work",
+    "sun": "Rest"
+  }
+]

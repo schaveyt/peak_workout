@@ -1,0 +1,159 @@
+{
+  "categories": [
+    {
+      "name": "Compound Lifts (GVT & Strength Phases)",
+      "subcategories": [
+        {
+          "name": "Upper Body",
+          "exercises": [
+            {
+              "name": "Barbell Bench Press",
+              "description": "Flat bench, barbell, 10x10 @ 60% 1RM.",
+              "substitution": "Machine Chest Press, Dumbbell Bench Press."
+            },
+            {
+              "name": "Rows",
+              "description": "Bent-Over Barbell Rows: Hinge at hips, pull barbell to torso. Chest-Supported Rows: Machine or incline bench row.",
+              "substitution": "Cable Seated Rows, TRX Rows."
+            },
+            {
+              "name": "Lat Pulldowns",
+              "description": "Wide or narrow grip, 10x10 @ controlled tempo."
+            },
+            {
+              "name": "Pull-Ups",
+              "description": "Assisted with bands or machine if needed."
+            },
+            {
+              "name": "Incline Press",
+              "description": "Barbell or dumbbell on 30–45° incline bench."
+            },
+            {
+              "name": "DB Shoulder Press",
+              "description": "Dumbbells pressed overhead, seated or standing."
+            },
+            {
+              "name": "Machine Press",
+              "description": "Chest or shoulder press machine."
+            }
+          ]
+        },
+        {
+          "name": "Lower Body",
+          "exercises": [
+            {
+              "name": "Leg Press",
+              "description": "Machine-based, 10x10 @ 60% 1RM."
+            },
+            {
+              "name": "Split Squats",
+              "description": "Static lunge position, rear foot elevated."
+            },
+            {
+              "name": "Hip Thrusts",
+              "description": "Barbell or dumbbell across hips, thrust upward."
+            },
+            {
+              "name": "Belt Squats",
+              "description": "Squat variation using a belt squat machine (knee-friendly)."
+            },
+            {
+              "name": "Step-Ups",
+              "description": "Step onto bench/box with dumbbells or bodyweight."
+            },
+            {
+              "name": "Bulgarian Split Squats",
+              "description": "Rear foot elevated on bench, dumbbells in hands."
+            },
+            {
+              "name": "Deadlifts",
+              "description": "Traditional: Barbell from floor (light weight for GVT).",
+              "substitution": "Trap Bar Deadlifts, Rack Pulls."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hypertrophy/Accessory Exercises",
+      "exercises": [
+        {
+          "name": "Tricep Pushdowns",
+          "description": "Cable machine with rope or straight bar."
+        },
+        {
+          "name": "Bicep Curls",
+          "description": "Dumbbells, barbell, or cable."
+        },
+        {
+          "name": "Lateral Raises",
+          "description": "Dumbbells or cables for shoulder development."
+        },
+        {
+          "name": "Leg Extensions",
+          "description": "Quad-focused machine exercise."
+        },
+        {
+          "name": "Leg Curls",
+          "description": "Hamstring-focused machine exercise (lying/seated)."
+        },
+        {
+          "name": "Glute-Ham Raises",
+          "description": "Bodyweight or weighted posterior chain exercise."
+        },
+        {
+          "name": "Calf Raises",
+          "description": "Bodyweight or weighted (machine or dumbbells)."
+        }
+      ]
+    },
+    {
+      "name": "Cardio & Conditioning",
+      "exercises": [
+        {
+          "name": "LISS (Low-Intensity Steady State)",
+          "description": "Brisk walking, cycling, elliptical (60–70% max HR)."
+        },
+        {
+          "name": "HIIT (High-Intensity Intervals)",
+          "description": "Bike sprints, rowing, or elliptical (30s sprint/1m recovery)."
+        },
+        {
+          "name": "Circuit Training",
+          "description": "Example circuit (Week 14): Kettlebell Swings, Push-Ups, Bodyweight Squats, Plank Holds."
+        }
+      ]
+    },
+    {
+      "name": "Active Recovery",
+      "exercises": [
+        {
+          "name": "Yoga",
+          "description": "Focus on mobility and stretching."
+        },
+        {
+          "name": "Mobility Work",
+          "description": "Foam rolling, dynamic stretches, banded stretches."
+        },
+        {
+          "name": "Light Cardio",
+          "description": "Leisurely walking or swimming."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "title": "Reps/Sets",
+      "content": "GVT: 10x10 with 60–90s rest. Strength: 4–6 reps, 4–5 sets. Hypertrophy: 8–12 reps, 3–4 sets."
+    },
+    {
+      "title": "Equipment",
+      "content": "Substitute exercises based on gym access (e.g., TRX for rows if no cable machine)."
+    },
+    {
+      "title": "Joint Safety",
+      "content": "Use machines/cables for high-volume work if joints are sensitive."
+    }
+  ]
+}

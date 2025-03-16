@@ -114,4 +114,4 @@
   - Strength: 4–6 reps, 4–5 sets.  
   - Hypertrophy: 8–12 reps, 3–4 sets.  
 - **Equipment**: Substitute exercises based on gym access (e.g., TRX for rows if no cable machine).  
-- **Joint Safety**: Use machines/cables for high-volume work if joints are sensitive.  
+- **Joint Safety**: Use machines/cables for high-volume work if joints are sensitive.

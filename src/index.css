@@ -6,11 +6,11 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  
+
   color-scheme: dark;
-  background-color: #121212;
   color: rgba(255, 255, 255, 0.87);
-  
+  background-color: #242424;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,15 +18,16 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
+@layer components {
+  .workout-card {
+    @apply bg-gray-800 rounded-lg p-4 border border-gray-700 hover:border-gray-600 transition-colors;
+  }
 }
 
-.workout-card {
-  @apply bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors;
+input, textarea {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
 }
 
-a {
-  text-decoration: none;
+button {
+  @apply transition-colors duration-200;
 }

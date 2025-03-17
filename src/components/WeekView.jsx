@@ -1,10 +1,15 @@
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import workoutData from '../data/workout.json'
 import projectData from '../data/project.json'
+import { getAllProgress } from '../data/userProgress'
 
 export default function WeekView() {
   const { weekNum } = useParams()
+  const [progressData, setProgressData] = useState({})
+  const [isLoading, setIsLoading] = useState(true)
+  
   const week = workoutData.find(w => w.week === weekNum)
   
   if (!week) {
@@ -44,6 +49,26 @@ export default function WeekView() {
     const endDate = getDayDate(6)   // Sunday
     return `${startDate} - ${endDate}`
   }
+  
+  useEffect(() => {
+    const loadProgressData = async () => {
+      setIsLoading(true)
+      const allProgress = await getAllProgress()
+      setProgressData(allProgress)
+      setIsLoading(false)
+    }
+    
+    loadProgressData()
+  }, [])
+  
+  const isDayCompleted = (dayIndex) => {
+    const key = `week_${weekNum}_day_${dayIndex + 1}`
+    return progressData[key]?.completed || false
+  }
+
+  if (isLoading) {
+    return <div className="text-center py-8">Loading...</div>
+  }
 
   return (
     <motion.div
@@ -67,7 +92,14 @@ export default function WeekView() {
                 <h3 className="font-bold">{day.label} <span className="font-normal text-sm text-gray-500">({getDayDate(index)})</span></h3>
                 <p className="text-gray-400">{week[day.key]}</p>
               </div>
-              <span className="text-2xl">→</span>
+              <div className="flex items-center">
+                {isDayCompleted(index) && (
+                  <span className="bg-green-600 text-white px-2 py-0.5 rounded-full text-xs mr-2">
+                    Completed
+                  </span>
+                )}
+                <span className="text-2xl">→</span>
+              </div>
             </div>
           </Link>
         ))}

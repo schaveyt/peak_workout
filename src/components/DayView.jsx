@@ -290,7 +290,7 @@ export default function DayView() {
             </div>
           ) : (
             <span className="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">
-              Not completed
+              Inomplete
             </span>
           )}
         </div>
@@ -345,7 +345,7 @@ export default function DayView() {
                     <label className="block text-sm text-gray-400 mb-1">Exercise</label>
                     <select
                       value={entry.name}
-                      onChange={(e) => handleExerciseChange(entry.id, 'name', e.target.value)}
+                      onChange={(e) => handleExerciseChange(entry.id, 'name', e.target.value)}Not completedc
                       className="w-full bg-gray-800 border border-gray-700 rounded px-3 py-2 text-white"
                     >
                       <option value="">Select an exercise</option>

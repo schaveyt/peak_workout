@@ -170,48 +170,88 @@ export default function ExerciseHistory() {
                 <h2 className="text-xl font-bold">{selectedExercise} History</h2>
                 <button 
                   onClick={() => setSelectedExercise(null)}
-                  className="text-sm text-gray-400 hover:text-gray-300"
+                  className="text-gray-400 hover:text-gray-300"
+                  aria-label="Close"
                 >
-                  Close
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
                 </button>
               </div>
 
               {isLoading ? (
                 <div className="text-center py-4">Loading history...</div>
               ) : history.length > 0 ? (
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b border-gray-700">
-                        <th className="text-left py-2 px-3">Date</th>
-                        <th className="text-left py-2 px-3">Weight</th>
-                        <th className="text-left py-2 px-3">Reps</th>
-                        <th className="text-left py-2 px-3">Sets</th>
-                        <th className="text-left py-2 px-3">Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {history.map((entry, index) => (
-                        <tr 
-                          key={index} 
-                          className={index % 2 === 0 ? 'bg-gray-800/30' : ''}
-                        >
-                          <td className="py-2 px-3">{formatDate(entry.week, entry.day)}</td>
-                          <td className="py-2 px-3">{entry.weight || '-'}</td>
-                          <td className="py-2 px-3">{entry.reps || '-'}</td>
-                          <td className="py-2 px-3">{entry.sets || '-'}</td>
-                          <td className="py-2 px-3">
-                            <Link 
-                              to={`/week/${entry.week}/day/${entry.day}`}
-                              className="text-blue-400 hover:text-blue-300 text-sm"
-                            >
-                              View Workout
-                            </Link>
-                          </td>
+                <div className="overflow-x-auto -mx-5 px-5">
+                  {/* Desktop view - Table */}
+                  <div className="hidden md:block">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b border-gray-700">
+                          <th className="text-left py-2 px-3">Date</th>
+                          <th className="text-left py-2 px-3">Weight</th>
+                          <th className="text-left py-2 px-3">Reps</th>
+                          <th className="text-left py-2 px-3">Sets</th>
+                          <th className="text-left py-2 px-3">Actions</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {history.map((entry, index) => (
+                          <tr 
+                            key={index} 
+                            className={index % 2 === 0 ? 'bg-gray-800/30' : ''}
+                          >
+                            <td className="py-2 px-3">{formatDate(entry.week, entry.day)}</td>
+                            <td className="py-2 px-3">{entry.weight || '-'}</td>
+                            <td className="py-2 px-3">{entry.reps || '-'}</td>
+                            <td className="py-2 px-3">{entry.sets || '-'}</td>
+                            <td className="py-2 px-3">
+                              <Link 
+                                to={`/week/${entry.week}/day/${entry.day}`}
+                                className="text-blue-400 hover:text-blue-300 text-sm"
+                              >
+                                Details
+                              </Link>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  {/* Mobile view - Card list */}
+                  <div className="md:hidden space-y-3">
+                    {history.map((entry, index) => (
+                      <div 
+                        key={index}
+                        className="bg-gray-800/30 rounded-lg p-3 text-sm"
+                      >
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="font-medium">{formatDate(entry.week, entry.day)}</span>
+                          <Link 
+                            to={`/week/${entry.week}/day/${entry.day}`}
+                            className="text-blue-400 hover:text-blue-300 text-xs bg-blue-900/20 px-2 py-1 rounded"
+                          >
+                            Details
+                          </Link>
+                        </div>
+                        <div className="grid grid-cols-3 gap-2 text-xs">
+                          <div>
+                            <span className="text-gray-400 block">Weight</span>
+                            <span className="font-medium">{entry.weight || '-'}</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-400 block">Reps</span>
+                            <span className="font-medium">{entry.reps || '-'}</span>
+                          </div>
+                          <div>
+                            <span className="text-gray-400 block">Sets</span>
+                            <span className="font-medium">{entry.sets || '-'}</span>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ) : (
                 <p className="text-center text-gray-400 py-4">

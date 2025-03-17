@@ -15,19 +15,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 @layer components {
   .workout-card {
-    @apply bg-gray-800 rounded-lg p-4 border border-gray-700 hover:border-gray-600 transition-colors;
+    @apply bg-gray-800 rounded-lg p-5 shadow-lg;
   }
-}
-
-input, textarea {
-  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
-}
-
-button {
-  @apply transition-colors duration-200;
+  
+  .nav-link {
+    @apply text-gray-300 hover:text-white px-2 py-1 rounded transition-colors;
+  }
+  
+  .nav-link.active {
+    @apply bg-gray-700 text-white;
+  }
 }

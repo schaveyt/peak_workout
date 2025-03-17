@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import WeeksList from './components/WeeksList'
 import WeekView from './components/WeekView'
 import DayView from './components/DayView'
+import ExerciseHistory from './components/ExerciseHistory'
 import Header from './components/Header'
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<WeeksList />} />
           <Route path="/week/:weekNum" element={<WeekView />} />
           <Route path="/week/:weekNum/day/:dayNum" element={<DayView />} />
+          <Route path="/history" element={<ExerciseHistory />} />
         </Routes>
       </main>
     </div>
